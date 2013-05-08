@@ -24,6 +24,8 @@ $inputSize = htmlspecialchars($params->get('inputSize'));
 // Input Placeholder
 $placeholder = htmlspecialchars($params->get('inputPlaceholder'));
 // Submit element type
+$submitClass = $params->get('submitClass');
+// Submit element type
 $submitType = $params->get('submitType');
 // Submit value
 $submitValue = htmlspecialchars($params->get('submitValue'));
