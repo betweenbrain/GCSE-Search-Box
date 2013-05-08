@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="module" version="2.5" method="upgrade">
+<install type="module"
+         version="2.5"
+         method="upgrade">
 	<name>Google Custom Search Engine Box</name>
 	<creationDate>May 8, 2013</creationDate>
 	<author>Matt Thomas</author>
@@ -20,18 +22,11 @@
 	</languages>
 
 	<params addpath="/modules/mod_gcse_search_box/elements">
-		<param name="loadjQuery"
-		       type="searchengineids"
-		       default=""
-		       label="Load jQuery"
-		       description=""/>
 		<param name="searchEngineID"
-		       type="list"
+		       type="text"
 		       default=""
 		       label="MOD_GCSE_BOX_SEARCH_ENGINE_ID_LABEL"
-		       description="MOD_GCSE_BOX_SEARCH_ENGINE_ID_DESC">
-			<option value="001816328621941992898:upy5cqylet8">*.guggenheim.org</option>
-		</param>
+		       description="MOD_GCSE_BOX_SEARCH_ENGINE_ID_DESC" />
 		<param name="formAction"
 		       type="text"
 		       default="/search"
@@ -80,5 +75,14 @@
 		       default=""
 		       label="Module Class Suffix"
 		       description="PARAMMODULECLASSSUFFIX"/>
+	</params>
+	<params group="advanced">
+		<param name="configuration"
+		       type="textarea"
+		       default=""
+		       label="Search Engine ID Configuration"
+		       description=""
+		       rows="10"
+		       cols="50"/>
 	</params>
 </install>

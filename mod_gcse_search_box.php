@@ -8,15 +8,16 @@
  */
 
 // Search Engine ID
-$cx = $params->get('searchEngineID');
+$cx = htmlspecialchars($params->get('searchEngineID'));
 // Form Class
 $formClass = htmlspecialchars($params->get('formClass'));
 // Form Action
 $formAction = htmlspecialchars($params->get('formAction'));
-if ($formAction[3] != 'http') {
+
+// Add root url to form action if not included
+if (!strstr($formAction, 'http')) {
 	$formAction = JURI::base() . $formAction;
 }
-
 // Input Class
 $inputClass = htmlspecialchars($params->get('inputClass'));
 // Input Size
