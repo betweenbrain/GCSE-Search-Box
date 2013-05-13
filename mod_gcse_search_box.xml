@@ -34,7 +34,7 @@
 		       description="MOD_GCSE_BOX_FORM_ACTION_DESC"/>
 		<param name="formClass"
 		       type="text"
-		       default="cse-search-box"
+		       default="gsc-search-box search search-and-go"
 		       label="MOD_GCSE_BOX_FORM_CLASS_LABEL"
 		       description="MOD_GCSE_BOX_FORM_CLASS_DESC"/>
 		<param name="inputClass"
@@ -44,7 +44,7 @@
 		       description="MOD_GCSE_INPUT_CLASS_DESC"/>
 		<param name="inputSize"
 		       type="text"
-		       default="31"
+		       default="19"
 		       label="MOD_GCSE_BOX_INPUT_SIZE_LABEL"
 		       description="MOD_GCSE_INPUT_SIZE_DESC"/>
 		<param name="inputPlaceholder"
@@ -54,7 +54,7 @@
 		       description="MOD_GCSE_PLACEHOLDER_DESC"/>
 		<param name="submitType"
 		       type="list"
-		       default="input"
+		       default="anchor"
 		       label="MOD_GCSE_BOX_SUBMIT_TYPE_LABEL"
 		       description="MOD_GCSE_BOX_SUBMIT_TYPE_DESC">
 			<option value="input">Input</option>
@@ -62,7 +62,7 @@
 		</param>
 		<param name="submitClass"
 		       type="text"
-		       default="go-btn search-go"
+		       default="search-go"
 		       label="MOD_GCSE_SUBMIT_CLASS_LABEL"
 		       description="MOD_GCSE_SUBMIT_CLASS_DESC"/>
 		<param name="submitValue"
@@ -72,17 +72,8 @@
 		       description="MOD_GCSE_SUBMIT_VALUE_DESC"/>
 		<param name="moduleclass_sfx"
 		       type="text"
-		       default=""
+		       default=" right"
 		       label="Module Class Suffix"
 		       description="PARAMMODULECLASSSUFFIX"/>
-	</params>
-	<params group="advanced">
-		<param name="configuration"
-		       type="textarea"
-		       default=""
-		       label="Search Engine ID Configuration"
-		       description=""
-		       rows="10"
-		       cols="50"/>
 	</params>
 </install>
