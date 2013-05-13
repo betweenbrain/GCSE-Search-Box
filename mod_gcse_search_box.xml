@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="2.5" method="upgrade">
+	<name>Google Custom Search Engine Box</name>
+	<creationDate>May 13, 2013</creationDate>
+	<author>Matt Thomas</author>
+	<authorUrl>http://betweenbrain.com</authorUrl>
+	<copyright>Copyright (C) 2013 The Solomon R. Guggenheim Foundation. All rights reserved.</copyright>
+	<version>1.0</version>
+	<description>MOD_GCSE_BOX_DESC</description>
+	<files>
+		<filename>mod_gcse_search_box.xml</filename>
+		<filename module="mod_gcse_search_box">mod_gcse_search_box.php</filename>
+		<filename>index.html</filename>
+		<folder>elements</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_gcse_search_box.ini</language>
+	</languages>
+
+	<params addpath="/modules/mod_gcse_search_box/elements">
+		<param name="searchEngineID"
+		       type="text"
+		       default=""
+		       label="MOD_GCSE_BOX_SEARCH_ENGINE_ID_LABEL"
+		       description="MOD_GCSE_BOX_SEARCH_ENGINE_ID_DESC" />
+		<param name="formAction"
+		       type="text"
+		       default="/search"
+		       label="MOD_GCSE_BOX_FORM_ACTION_LABEL"
+		       description="MOD_GCSE_BOX_FORM_ACTION_DESC"/>
+		<param name="formClass"
+		       type="text"
+		       default="gsc-search-box search search-and-go"
+		       label="MOD_GCSE_BOX_FORM_CLASS_LABEL"
+		       description="MOD_GCSE_BOX_FORM_CLASS_DESC"/>
+		<param name="inputClass"
+		       type="text"
+		       default="inputbox"
+		       label="MOD_GCSE_BOX_INPUT_CLASS_LABEL"
+		       description="MOD_GCSE_INPUT_CLASS_DESC"/>
+		<param name="inputSize"
+		       type="text"
+		       default="19"
+		       label="MOD_GCSE_BOX_INPUT_SIZE_LABEL"
+		       description="MOD_GCSE_INPUT_SIZE_DESC"/>
+		<param name="inputPlaceholder"
+		       type="text"
+		       default="Search"
+		       label="MOD_GCSE_BOX_PLACEHOLDER_LABEL"
+		       description="MOD_GCSE_PLACEHOLDER_DESC"/>
+		<param name="submitType"
+		       type="list"
+		       default="anchor"
+		       label="MOD_GCSE_BOX_SUBMIT_TYPE_LABEL"
+		       description="MOD_GCSE_BOX_SUBMIT_TYPE_DESC">
+			<option value="input">Input</option>
+			<option value="anchor">Anchor</option>
+		</param>
+		<param name="submitClass"
+		       type="text"
+		       default="search-go"
+		       label="MOD_GCSE_SUBMIT_CLASS_LABEL"
+		       description="MOD_GCSE_SUBMIT_CLASS_DESC"/>
+		<param name="submitValue"
+		       type="text"
+		       default="Go"
+		       label="MOD_GCSE_SUBMIT_VALUE_LABEL"
+		       description="MOD_GCSE_SUBMIT_VALUE_DESC"/>
+		<param name="moduleclass_sfx"
+		       type="text"
+		       default=" right"
+		       label="Module Class Suffix"
+		       description="PARAMMODULECLASSSUFFIX"/>
+	</params>
+</install>
