@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="module"
-         version="2.5"
-         method="upgrade">
+<install type="module" version="2.5" method="upgrade">
 	<name>Google Custom Search Engine Box</name>
-	<creationDate>May 8, 2013</creationDate>
+	<creationDate>May 13, 2013</creationDate>
 	<author>Matt Thomas</author>
 	<authorUrl>http://betweenbrain.com</authorUrl>
 	<copyright>Copyright (C) 2013 The Solomon R. Guggenheim Foundation. All rights reserved.</copyright>
-	<version>0.1</version>
+	<version>1.0</version>
 	<description>MOD_GCSE_BOX_DESC</description>
 	<files>
 		<filename>mod_gcse_search_box.xml</filename>
